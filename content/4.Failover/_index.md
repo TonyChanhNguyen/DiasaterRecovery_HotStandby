@@ -6,14 +6,14 @@ chapter : false
 pre : " <b> 4. </b> "
 ---
 
-In the event a disaster affects your primary region N. Virginia (us-east-1), you want to bring up the resources in the secondary region N. California (us-west-1).
+When a regional service event affects the Unishop application in the primary region N. Virginia (us-east-1), we want to fail over to the secondary region Oregon (us-west-2).
 
 ### Simulating a Regional Service Event
 
 You will now simulate a regional service event affecting the Unishop website in N. Virginia (us-east-1). You are going to achieve this by blocking public access to the S3 bucket that is hosting the website making the Unishop website unavailable.
 
 1. Go to [S3](https://s3.console.aws.amazon.com/s3/home).
-2. Click on the bucket name **pilot-primary-uibucket-xxxxxxxxxxxx**.
+2. Click on the bucket name **hot-primary-uibucket-xxxxxxxxxxxx**.
 ![Failover](/images/4.failover/4.1failover.png?width=90pc)
 
 3. Click on **Permissions** tab.

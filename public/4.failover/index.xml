@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Failover on Pilot Light</title>
+    <title>Failover on Hot Standby</title>
     <link>/4.failover/</link>
-    <description>Recent content in Failover on Pilot Light</description>
+    <description>Recent content in Failover on Hot Standby</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/4.failover/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

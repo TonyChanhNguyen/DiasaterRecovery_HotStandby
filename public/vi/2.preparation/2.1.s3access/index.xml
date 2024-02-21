@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Truy cập S3 on Pilot Light</title>
+    <title>Truy cập S3 on Hot Standby</title>
     <link>/vi/2.preparation/2.1.s3access/</link>
-    <description>Recent content in Truy cập S3 on Pilot Light</description>
+    <description>Recent content in Truy cập S3 on Hot Standby</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/2.preparation/2.1.s3access/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -5,9 +5,9 @@ weight : 1
 chapter : false
 pre : " <b> 2.1 </b> "
 ---
-Ứng dụng của bạn sử dụng AWS Simple Storage Service (S3) để lưu trữ website tĩnh. Để giúp ứng dụng khả dụng với người dùng Internet, bạn phải vô hiệu hóa chính sách tài khoản AWS đã chặn truy cập công cộng.
+Ứng dụng của bạn sử dụng AWS Simple Storage Service (S3) để lưu trữ website tĩnh. Để giúp ứng dụng khả dụng với người dùng Internet, bạn phải vô hiệu hóa chính sách tài khoản AWS đã chặn truy cập công khai.
 
-1. Nhấn [S3](https://s3.console.aws.amazon.com/s3/home) để chuyển hướng đến giao diện.
+1. Nhấn [S3](https://s3.console.aws.amazon.com/s3/home) to navigate to the dashboard.
 2. Chọn chức năng **Block Public Access settings for this account**.
 
 ![S3 Access](/images/2.preparation/2.1.s3access/2.1.1s3access.png?width=90pc)
@@ -24,7 +24,7 @@ Nếu bạn thấy rằng **Block public access** là **Off**, bạn có thể b
 5. Sau đó, nhấn **save changes**.
 ![S3 Access](/images/2.preparation/2.1.s3access/2.1.3s3access.png?width=90pc)
 
-6. Nhập ```confirm```, sau đó nhấn **Confirm** để lưu lại sự thay đổi.
+6. Nhập ```confirm```, sau đó nhấn **Confirm** để lưu lại các thay đổi của bạn.
 ![S3 Access](/images/2.preparation/2.1.s3access/2.1.4s3access.png?width=90pc)
 
 7. Thay đổi của bạn đã được cập nhật thành công.
