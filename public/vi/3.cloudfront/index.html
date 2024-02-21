@@ -12,21 +12,21 @@
     <title>CloudFront :: Hot Standby</title>
 
     
-    <link href="/css/nucleus.css?1705595149" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1705595149" rel="stylesheet">
-    <link href="/css/hybrid.css?1705595149" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1705595149" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1705595149" rel="stylesheet">
-    <link href="/css/auto-complete.css?1705595149" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1705595149" rel="stylesheet">
-    <link href="/css/theme.css?1705595149" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1705595149" rel="stylesheet">
+    <link href="/css/nucleus.css?1708511527" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708511527" rel="stylesheet">
+    <link href="/css/hybrid.css?1708511527" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708511527" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708511527" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708511527" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708511527" rel="stylesheet">
+    <link href="/css/theme.css?1708511527" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708511527" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1705595149" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1708511527" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1705595149"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708511527"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1705595149"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1705595149"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708511527"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708511527"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1705595149"></script>
+<script type="text/javascript" src="/js/search.js?1708511527"></script>
 
     
   </div>
@@ -574,21 +574,21 @@
 </li>
 <li>
 <p>Nhấn nút <strong>Create a CloudFront Distribution</strong>.
-<img src="/images/3.cloudfront/3.1cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.1cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Chọn <strong>hot-primary-uibucket-xxx</strong> tại <strong>Origin domain</strong>.</p>
 </li>
 <li>
 <p>Nhấn <strong>Use website endpoint</strong>.
-<img src="/images/3.cloudfront/3.2cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.2cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Cuộn xuống tính năng <strong>Cache key and origin requests</strong>.</p>
 </li>
 <li>
 <p>Chọn <strong>CachingDisabled</strong> ở <strong>Cache policy</strong>.
-<img src="/images/3.cloudfront/3.3cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.3cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 
@@ -597,7 +597,7 @@
 
 <ol start="7">
 <li>Tại mục <strong>Web Application Firewall (WAF)</strong>, chọn <strong>Do not enable security protections</strong>.
-<img src="/images/3.cloudfront/3.4cloudfront.png?width=90pc" alt="CloudFront"></li>
+<img src="../../images/3.cloudfront/3.4cloudfront.png?width=90pc" alt="CloudFront"></li>
 </ol>
 
 <div class="notices info" ><p>Cách tốt nhất để giữ an toàn cho ứng dụng của bạn khỏi các mối đe dọa web và lỗ hổng bảo mật phổ biến nhất bằng AWS WAF là chọn kích hoạt bảo vệ bảo mật. Các yêu cầu bị chặn sẽ bị dừng trước khi chúng đến được máy chủ web của bạn</p>
@@ -605,7 +605,7 @@
 
 <ol start="8">
 <li>Cuộn xuống cuối trang và nhấn nút <strong>Create distribution</strong>.
-<img src="/images/3.cloudfront/3.5cloudfront.png?width=90pc" alt="CloudFront"></li>
+<img src="../../images/3.cloudfront/3.5cloudfront.png?width=90pc" alt="CloudFront"></li>
 </ol>
 <h3 id="cấu-hình-additional-origin">Cấu hình Additional Origin</h3>
 <p>Bây giờ bạn sẽ thêm một Origin bổ sung và sử dụng <strong>hot-secondary-uibucket-xxxx</strong>.</p>
@@ -615,33 +615,33 @@
 </li>
 <li>
 <p>Nhấn nút <strong>Create origin</strong>.
-<img src="/images/3.cloudfront/3.6cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.6cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Chọn <strong>hot-secondary-uibucket-xxx</strong> tại <strong>Origin domain</strong>.</p>
 </li>
 <li>
 <p>Nhấn nút <strong>Use website endpoint</strong>.
-<img src="/images/3.cloudfront/3.7cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.7cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Cuộn xuống cuối trang và nhấn nút <strong>Create origin</strong>.
-<img src="/images/3.cloudfront/3.8cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.8cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 <h3 id="cấu-hình-origin-group">Cấu hình Origin Group</h3>
 <ol>
 <li>
 <p>Nhấn nút <strong>Create Origin Group</strong>.
-<img src="/images/3.cloudfront/3.9cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.9cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Tại mục <strong>Origins</strong>, chọn <strong>hot-primary-uibucket-xxxx</strong> và nhấn <strong>Add</strong>.
-<img src="/images/3.cloudfront/3.10cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.10cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Lặp lại các bước trên với <strong>hot-secondary-uibucket-xxxx</strong>. 
-<img src="/images/3.cloudfront/3.11cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.11cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Nhập <code>hot-standby-origin-group</code> là <strong>Name</strong></p>
@@ -651,7 +651,7 @@
 </li>
 <li>
 <p>Sau đó, nhấn <strong>Create origin group</strong>.
-<img src="/images/3.cloudfront/3.12cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.12cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 <h3 id="cấu-hình-behaviors">Cấu hình Behaviors</h3>
@@ -664,34 +664,34 @@
 </li>
 <li>
 <p>Sau đó, nhấn nút <strong>Edit</strong>.
-<img src="/images/3.cloudfront/3.13cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.13cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Chọn <strong>hot-standby-origin-group</strong> là <strong>Origin and Origin Groups</strong>.
-<img src="/images/3.cloudfront/3.14cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.14cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Cuộn xuống cuối trang và nhấn nút <strong>Save changes</strong>.
-<img src="/images/3.cloudfront/3.15cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.15cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Nhấn đường dẫn <strong>Distributions</strong>.
-<img src="/images/3.cloudfront/3.16cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.16cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Chờ đến khi <strong>Status</strong> chuyển thành <strong>Enabled</strong> và <strong>Last Modified</strong> có ngày.
-<img src="/images/3.cloudfront/3.17cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.17cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 <h3 id="kiểm-tra-distribution">Kiểm tra Distribution</h3>
 <ol>
 <li>
 <p>Sao chép <strong>CloudFront Distribution&rsquo;s Domain Name</strong> đến trình duyệt web.
-<img src="/images/3.cloudfront/3.18cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.18cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Xác nhận rằng tiêu đề của website thể hiện <strong>The Unicorn Shop - us-east-1</strong> và số lượng của <strong>Cart Shop</strong> giống với trước đó sau khi bạn đã đăng nhập thành công.
-<img src="/images/3.cloudfront/3.19cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../../images/3.cloudfront/3.19cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 
@@ -940,19 +940,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1705595149"></script>
-    <script src="/js/perfect-scrollbar.min.js?1705595149"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1705595149"></script>
-    <script src="/js/jquery.sticky.js?1705595149"></script>
-    <script src="/js/featherlight.min.js?1705595149"></script>
-    <script src="/js/highlight.pack.js?1705595149"></script>
+    <script src="/js/clipboard.min.js?1708511527"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708511527"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708511527"></script>
+    <script src="/js/jquery.sticky.js?1708511527"></script>
+    <script src="/js/featherlight.min.js?1708511527"></script>
+    <script src="/js/highlight.pack.js?1708511527"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1705595149"></script>
-    <script src="/js/learn.js?1705595149"></script>
-    <script src="/js/hugo-learn.js?1705595149"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708511527"></script>
+    <script src="/js/learn.js?1708511527"></script>
+    <script src="/js/hugo-learn.js?1708511527"></script>
 
-    <link href="/mermaid/mermaid.css?1705595149" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1705595149"></script>
+    <link href="/mermaid/mermaid.css?1708511527" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1708511527"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,21 +12,21 @@
     <title>Hot Standby :: Hot Standby</title>
 
     
-    <link href="/css/nucleus.css?1705595149" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1705595149" rel="stylesheet">
-    <link href="/css/hybrid.css?1705595149" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1705595149" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1705595149" rel="stylesheet">
-    <link href="/css/auto-complete.css?1705595149" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1705595149" rel="stylesheet">
-    <link href="/css/theme.css?1705595149" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1705595149" rel="stylesheet">
+    <link href="/css/nucleus.css?1708511527" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708511527" rel="stylesheet">
+    <link href="/css/hybrid.css?1708511527" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708511527" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708511527" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708511527" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708511527" rel="stylesheet">
+    <link href="/css/theme.css?1708511527" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708511527" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1705595149" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1708511527" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1705595149"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708511527"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1705595149"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1705595149"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708511527"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708511527"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1705595149"></script>
+<script type="text/javascript" src="/js/search.js?1708511527"></script>
 
     
   </div>
@@ -511,13 +511,13 @@
 
  
 <h1 id="hot-standby">Hot Standby</h1>
-<p>Trong bài thực hành này, bạn sẽ trải qua chiến lược khắc phục thảm họa Hot Standby. Chiến lược khắc phục thảm họa Warm Standby có thời điểm khắc phục  /  Thời gian phục hồi (<strong>Recovery Point Objective(RPO) / Recovery Time Objective (RTO)</strong>) thời gian thực. Đối với khu vực thứ cấp của chiến lược Hot Standby, dữ liệu sẽ hoạt động và cơ sở hạ tầng cốt lõi sẽ được cung cấp và các dịch vụ chạy với công suất tối đa.</p>
+<p>Trong bài thực hành này, bạn sẽ trải qua chiến lược khắc phục thảm họa Hot Standby. Chiến lược khắc phục thảm họa Hot Standby có thời điểm khắc phục  /  Thời gian phục hồi (<strong>Recovery Point Objective(RPO) / Recovery Time Objective (RTO)</strong>) thời gian thực. Đối với khu vực thứ cấp của chiến lược Hot Standby, dữ liệu sẽ hoạt động và cơ sở hạ tầng cốt lõi sẽ được cung cấp và các dịch vụ chạy với công suất tối đa.</p>
 <p>Các ứng dụng hiện đang được triển khai tại khu vực chính N. Virginia (us-east-1). Oregon (us-west-2) sẽ là khu vực thứ cấp của bạn.</p>
 <p>Ứng dụng mẫu của bạn là <strong>Unishop</strong>. Nó là một ứng dụng Spring Boot Java được triển khai trên một máy chủ Amazon Elastic Compute Cloud (EC2) sử dụng một mạng con công cộng. Vùng chứa dữ liệu của bạn là một CSDL Amazon Aurora  MySQL dùng để chứa dữ liệu của người dùng. Ứng dụng mẫu của bạn cũng được triển khai sử dụng API Gateway và AWS Lambda. Vùng chứa dữ liệu của bạn là Amazon DynamoDB dùng chứa dữ liệu của giỏ hàng mua sắm. Giao diện người dùng được viết bằng bootstrap và được lưu trữ trên Amazon Simple Storage Service (S3).</p>
 <p>Ứng dụng mẫu này có hai vùng chứa dữ liệu, Amazon Aurora và Amazon DynamoDB giới thiệu tính năng phục hồi sau thảm họa của mỗi vùng chứa dữ liệu. Bạn sẽ sử dụng Amazon DynamoDB để chứa trạng thái giỏ hàng mua sắm và Amazon Aurora để lưu trữ danh mục sản phẩm Unicorn. Khi bạn bắt đầu chuyển đổi dự phòng, đối với CSDL Amazon Aurora bạn sẽ không cần phải thực hiện nâng cấp trong khu vực phục hồi vì bạn chỉ cần đọc danh mục sản phẩm. Điều này có thể làm giảm thời gian phục hồi vì không cần thiết nâng cấp CSDL nào. Trong trường hợp chuyển đổi dự phòng Amazon DynamoDB bạn cấu hình Global Tables mà cho phép bạn ghi đồng thời vì thế không cần thêm bất kì thao tác nào. Đối với khối lượng công việc của bạn, bạn sẽ chọn vùng chứa dữ liệu phù hợp cho trường hợp sử dụng của mình.</p>
 <p>Bài thực hành này tận dụng ưu điểm của Amazon CloudFront mà bạn sẽ sử dụng như là mạng lưới phân phối nội dung của bạn. Bạn cũng sẽ tận dụng ưu điểm của Amazon Aurora Global Database để nhân bản dữ liệu Amazon Aurora MySQL của bạn đến vùng thứ cấp và Amazon DynamoDB Global Tables để nhân bản dữ liệu DynamoDB đến vùng thứ cấp của bạn.</p>
 <p>CloudFormation sẽ được sử dụng để cấu hình cơ sở hạ tầng và triển khai ứng dụng. Cung cấp cơ sở hạ tầng của bạn với các phương thức cơ sở hạ tầng bằng code (IaC) là phương pháp tổt nhất. CloudFormation là một cách đơn giản để tăng tốc việc cung cấp dịch vụ đám mây với cơ sở hạ tầng bằng code.</p>
-<p><img src="/images/hotstandby.png?width=60pc" alt="Hot Standby"></p>
+<p><img src="../images/hotstandby.png?width=60pc" alt="Hot Standby"></p>
 	
   
         
@@ -747,19 +747,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1705595149"></script>
-    <script src="/js/perfect-scrollbar.min.js?1705595149"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1705595149"></script>
-    <script src="/js/jquery.sticky.js?1705595149"></script>
-    <script src="/js/featherlight.min.js?1705595149"></script>
-    <script src="/js/highlight.pack.js?1705595149"></script>
+    <script src="/js/clipboard.min.js?1708511527"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708511527"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708511527"></script>
+    <script src="/js/jquery.sticky.js?1708511527"></script>
+    <script src="/js/featherlight.min.js?1708511527"></script>
+    <script src="/js/highlight.pack.js?1708511527"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1705595149"></script>
-    <script src="/js/learn.js?1705595149"></script>
-    <script src="/js/hugo-learn.js?1705595149"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708511527"></script>
+    <script src="/js/learn.js?1708511527"></script>
+    <script src="/js/hugo-learn.js?1708511527"></script>
 
-    <link href="/mermaid/mermaid.css?1705595149" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1705595149"></script>
+    <link href="/mermaid/mermaid.css?1708511527" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1708511527"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

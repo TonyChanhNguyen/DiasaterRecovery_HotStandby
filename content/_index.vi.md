@@ -6,7 +6,7 @@ chapter : false
 ---
 # Hot Standby
 
-Trong bài thực hành này, bạn sẽ trải qua chiến lược khắc phục thảm họa Hot Standby. Chiến lược khắc phục thảm họa Warm Standby có thời điểm khắc phục  /  Thời gian phục hồi (**Recovery Point Objective(RPO) / Recovery Time Objective (RTO)**) thời gian thực. Đối với khu vực thứ cấp của chiến lược Hot Standby, dữ liệu sẽ hoạt động và cơ sở hạ tầng cốt lõi sẽ được cung cấp và các dịch vụ chạy với công suất tối đa.
+Trong bài thực hành này, bạn sẽ trải qua chiến lược khắc phục thảm họa Hot Standby. Chiến lược khắc phục thảm họa Hot Standby có thời điểm khắc phục  /  Thời gian phục hồi (**Recovery Point Objective(RPO) / Recovery Time Objective (RTO)**) thời gian thực. Đối với khu vực thứ cấp của chiến lược Hot Standby, dữ liệu sẽ hoạt động và cơ sở hạ tầng cốt lõi sẽ được cung cấp và các dịch vụ chạy với công suất tối đa.
 
 Các ứng dụng hiện đang được triển khai tại khu vực chính N. Virginia (us-east-1). Oregon (us-west-2) sẽ là khu vực thứ cấp của bạn.
 
@@ -18,4 +18,4 @@ Bài thực hành này tận dụng ưu điểm của Amazon CloudFront mà bạ
 
 CloudFormation sẽ được sử dụng để cấu hình cơ sở hạ tầng và triển khai ứng dụng. Cung cấp cơ sở hạ tầng của bạn với các phương thức cơ sở hạ tầng bằng code (IaC) là phương pháp tổt nhất. CloudFormation là một cách đơn giản để tăng tốc việc cung cấp dịch vụ đám mây với cơ sở hạ tầng bằng code.
 
-![Hot Standby](/images/hotstandby.png?width=60pc)
+![Hot Standby](../images/hotstandby.png?width=60pc)

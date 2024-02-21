@@ -12,21 +12,21 @@
     <title>CloudFront :: Hot Standby</title>
 
     
-    <link href="/css/nucleus.css?1705595149" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1705595149" rel="stylesheet">
-    <link href="/css/hybrid.css?1705595149" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1705595149" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1705595149" rel="stylesheet">
-    <link href="/css/auto-complete.css?1705595149" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1705595149" rel="stylesheet">
-    <link href="/css/theme.css?1705595149" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1705595149" rel="stylesheet">
+    <link href="/css/nucleus.css?1708511527" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708511527" rel="stylesheet">
+    <link href="/css/hybrid.css?1708511527" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708511527" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708511527" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708511527" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708511527" rel="stylesheet">
+    <link href="/css/theme.css?1708511527" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708511527" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1705595149" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1708511527" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1705595149"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708511527"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1705595149"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1705595149"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708511527"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708511527"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1705595149"></script>
+<script type="text/javascript" src="/js/search.js?1708511527"></script>
 
     
   </div>
@@ -574,21 +574,21 @@
 </li>
 <li>
 <p>Click the <strong>Create a CloudFront Distribution</strong> button.
-<img src="/images/3.cloudfront/3.1cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.1cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Select <strong>hot-primary-uibucket-xxx</strong> at <strong>Origin domain</strong>.</p>
 </li>
 <li>
 <p>Click on <strong>Use website endpoint</strong>.
-<img src="/images/3.cloudfront/3.2cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.2cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Scroll down to <strong>Cache key and origin requests</strong> feature.</p>
 </li>
 <li>
 <p>Select <strong>CachingDisabled</strong> as <strong>Cache policy</strong>.
-<img src="/images/3.cloudfront/3.3cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.3cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 
@@ -597,7 +597,7 @@
 
 <ol start="7">
 <li>At <strong>Web Application Firewall (WAF)</strong> section, select <strong>Do not enable security protections</strong>.
-<img src="/images/3.cloudfront/3.4cloudfront.png?width=90pc" alt="CloudFront"></li>
+<img src="../images/3.cloudfront/3.4cloudfront.png?width=90pc" alt="CloudFront"></li>
 </ol>
 
 <div class="notices info" ><p>Best practice to keep your application secure from the most common web threats and security vulnerabilities using AWS WAF is to select Enable security protections. Blocked requests are stopped before they reach your web servers.</p>
@@ -605,7 +605,7 @@
 
 <ol start="8">
 <li>Scroll down to the end of page and click the <strong>Create distribution</strong> button.
-<img src="/images/3.cloudfront/3.5cloudfront.png?width=90pc" alt="CloudFront"></li>
+<img src="../images/3.cloudfront/3.5cloudfront.png?width=90pc" alt="CloudFront"></li>
 </ol>
 <h3 id="configure-an-additional-origin">Configure an Additional Origin</h3>
 <p>You will now add an additional Origin and use your <strong>hot-secondary-uibucket-xxxx</strong>.</p>
@@ -615,33 +615,33 @@
 </li>
 <li>
 <p>Click the <strong>Create origin</strong> button.
-<img src="/images/3.cloudfront/3.6cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.6cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Select <strong>hot-secondary-uibucket-xxx</strong> at <strong>Origin domain</strong>.</p>
 </li>
 <li>
 <p>Click the <strong>Use website endpoint</strong> button.
-<img src="/images/3.cloudfront/3.7cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.7cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Scroll down to the end of page and click the <strong>Create origin</strong> button.
-<img src="/images/3.cloudfront/3.8cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.8cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 <h3 id="configure-the-origin-group">Configure the Origin Group</h3>
 <ol>
 <li>
 <p>Click on <strong>Create Origin Group</strong> button.
-<img src="/images/3.cloudfront/3.9cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.9cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>At <strong>Origins</strong> section, select <strong>hot-primary-uibucket-xxxx</strong> and then click on <strong>Add</strong>.
-<img src="/images/3.cloudfront/3.10cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.10cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Repeat above step with <strong>hot-secondary-uibucket-xxxx</strong>. 
-<img src="/images/3.cloudfront/3.11cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.11cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Input <code>hot-standby-origin-group</code> as <strong>Name</strong></p>
@@ -651,7 +651,7 @@
 </li>
 <li>
 <p>Then, click on <strong>Create origin group</strong>.
-<img src="/images/3.cloudfront/3.12cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.12cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 <h3 id="configure-behaviors">Configure Behaviors</h3>
@@ -664,34 +664,34 @@
 </li>
 <li>
 <p>Then, click the <strong>Edit</strong> button.
-<img src="/images/3.cloudfront/3.13cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.13cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Select <strong>hot-standby-origin-group</strong> as the <strong>Origin and Origin Groups</strong>.
-<img src="/images/3.cloudfront/3.14cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.14cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Scroll down to the end of page and click the <strong>Save changes</strong> button.
-<img src="/images/3.cloudfront/3.15cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.15cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Click the <strong>Distributions</strong> link.
-<img src="/images/3.cloudfront/3.16cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.16cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Wait for <strong>Status</strong> to be <strong>Enabled</strong> and for <strong>Last Modified</strong> to have a date.
-<img src="/images/3.cloudfront/3.17cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.17cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 <h3 id="verify-the-distribution">Verify the Distribution</h3>
 <ol>
 <li>
 <p>Copy the <strong>CloudFront Distribution&rsquo;s Domain Name</strong> into a new browser window.
-<img src="/images/3.cloudfront/3.18cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.18cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 <li>
 <p>Confirm that the website&rsquo;s header says <strong>The Unicorn Shop - us-east-1</strong> and quantity of <strong>Cart Shop</strong> same as before after you log in successfully.
-<img src="/images/3.cloudfront/3.19cloudfront.png?width=90pc" alt="CloudFront"></p>
+<img src="../images/3.cloudfront/3.19cloudfront.png?width=90pc" alt="CloudFront"></p>
 </li>
 </ol>
 
@@ -940,19 +940,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1705595149"></script>
-    <script src="/js/perfect-scrollbar.min.js?1705595149"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1705595149"></script>
-    <script src="/js/jquery.sticky.js?1705595149"></script>
-    <script src="/js/featherlight.min.js?1705595149"></script>
-    <script src="/js/highlight.pack.js?1705595149"></script>
+    <script src="/js/clipboard.min.js?1708511527"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708511527"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708511527"></script>
+    <script src="/js/jquery.sticky.js?1708511527"></script>
+    <script src="/js/featherlight.min.js?1708511527"></script>
+    <script src="/js/highlight.pack.js?1708511527"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1705595149"></script>
-    <script src="/js/learn.js?1705595149"></script>
-    <script src="/js/hugo-learn.js?1705595149"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708511527"></script>
+    <script src="/js/learn.js?1708511527"></script>
+    <script src="/js/hugo-learn.js?1708511527"></script>
 
-    <link href="/mermaid/mermaid.css?1705595149" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1705595149"></script>
+    <link href="/mermaid/mermaid.css?1708511527" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1708511527"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -18,7 +18,7 @@ This module takes advantage of Amazon CloudFront  which you will use as your con
 
 CloudFormation  will be used to configure the infrastructure and deploy the application. Provisioning your infrastructure with infrastructure as code (IaC) methodologies is a best practice. CloudFormation is an easy way to speed up cloud provisioning with infrastructure as code.
 
-![Hot Standby](/images/hotstandby.png?width=60pc)
+![Hot Standby](../images/hotstandby.png?width=60pc)
 
 ### Content
 

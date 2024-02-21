@@ -12,10 +12,10 @@ Nếu bạn quay lại và làm mới trình duyệt của mình (sử dụng Cl
 
 1. Đi đến [CloudFront Distributions](https://us-east-1.console.aws.amazon.com/cloudfront/v4/home?region=ap-southeast-1#/distributions).
 2. Sao chép **Domain name** vào trình duyệt web.
-![Failover](/images/5.verifyfailover/5.1verifyfailover.png?width=90pc)
+![Failover](../../images/5.verifyfailover/5.1verifyfailover.png?width=90pc)
 
 3. Xác nhận rằng tiêu đề của website thể hiện **The Unicorn Shop - us-west-2** và số lượng của **Cart Shop** giống với trước đó sau khi bạn đã đăng nhập thành công.
-![Failover](/images/5.verifyfailover/5.2verifyfailover.png?width=90pc)
+![Failover](../../images/5.verifyfailover/5.2verifyfailover.png?width=90pc)
 
 
 #### Chúc mừng, website của bạn đã được chuyển đổi dự phòng sang vùng thứ cấp **Oregon (us-west-2)** từ vùng chính **N. Virginia (us-east-1)** thành công.
