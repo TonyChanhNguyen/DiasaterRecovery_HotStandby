@@ -16,7 +16,7 @@ Your application employs AWS Simple Storage Service (S3) Static website hosting.
 3. If you see that **Block public access** is **On**, click on **Edit** button.
 
 {{%notice note%}}
-If you see that **Block public access** is **Off**, you can skip this step and to go [Primary region](../2.preparation/2.2.primaryregion/).
+If you see that **Block public access** is **Off**, you can skip this step and to go [Primary region](../../2.preparation/2.2.primaryregion/).
 {{%/notice%}}
 
 ![S3 Access](../../images/2.preparation/2.1.s3access/2.1.2s3access.png?width=90pc)

@@ -15,7 +15,7 @@ pre : " <b> 2.1 </b> "
 3. Nếu bạn thấy rằng **Block public access** là **On**, nhấn nút **Edit**.
 
 {{%notice note%}}
-Nếu bạn thấy rằng **Block public access** là **Off**, bạn có thể bỏ qua bước này và đi đến [Primary region](../2.preparation/2.2.primaryregion/).
+Nếu bạn thấy rằng **Block public access** là **Off**, bạn có thể bỏ qua bước này và đi đến [Primary region](../../2.preparation/2.2.primaryregion/).
 {{%/notice%}}
 
 ![S3 Access](../../../images/2.preparation/2.1.s3access/2.1.2s3access.png?width=90pc)
